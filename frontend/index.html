@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dulces Livia · Mermeladas caseras</title>
+  <meta name="description" content="Mermeladas artesanales hechas en casa, a fuego lento y con fruta de estación.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio">Dulces Livia</a>
+    <nav aria-label="Principal">
+      <a href="#mermeladas">Mermeladas</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__text">
+        <p class="hero__note">Hecho en casa, frasco por frasco</p>
+        <h1>Mermeladas a fuego lento, como las de la abuela.</h1>
+        <p class="hero__lead">Fruta de estación, azúcar y paciencia. Nada de conservantes ni colorantes: solo lo que tiene que tener un buen frasco.</p>
+        <a class="btn" href="#mermeladas">Ver los sabores</a>
+      </div>
+      <div class="hero__jars" aria-hidden="true">
+        <div class="jar jar--lg" style="--jam:#C2185B;--cloth:#C2185B">
+          <div class="lid"></div>
+          <div class="glass"><div class="label"><small>Dulces Livia</small><b>Frutilla</b></div></div>
+        </div>
+        <div class="jar" style="--jam:#F28C28;--cloth:#F28C28">
+          <div class="lid"></div>
+          <div class="glass"><div class="label"><small>Dulces Livia</small><b>Naranja</b></div></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="gingham-band" aria-hidden="true"></div>
+
+    <section class="section" id="mermeladas">
+      <h2>Nuestras mermeladas</h2>
+      <p class="section__intro">Se hacen en tandas chicas y según lo que da la temporada, así que algunos sabores van y vienen.</p>
+      <div class="grid" id="productos"></div>
+    </section>
+
+    <section class="section about" id="nosotros">
+      <div class="about__text">
+        <h2>Nosotros</h2>
+        <p>Dulces Livia empezó en la cocina de casa, con una olla de cobre y la receta de frutilla que Livia hacía cada verano para la familia. Los frascos regalados a vecinos y amigos se fueron pidiendo cada vez más, y hoy seguimos haciéndolos igual: a mano, a fuego lento y probando cada tanda antes de envasarla.</p>
+        <p>Elegimos la fruta, la cocinamos, envasamos y pegamos cada etiqueta nosotros.</p>
+      </div>
+      <ul class="team">
+        <li class="person" style="--c:#C2185B">
+          <span class="avatar">L</span>
+          <div><h3>Livia</h3><p>Fundadora y maestra de la olla. Es quien da el punto justo a cada mermelada.</p></div>
+        </li>
+        <li class="person" style="--c:#2E7D6B">
+          <span class="avatar">M</span>
+          <div><h3>Marcos</h3><p>Se ocupa de conseguir la fruta, de las entregas y de que nunca falte un frasco.</p></div>
+        </li>
+        <li class="person" style="--c:#5B3FA0">
+          <span class="avatar">S</span>
+          <div><h3>Sofía</h3><p>Diseña las etiquetas, saca las fotos y atiende las redes.</p></div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacto">
+    <div class="footer__inner">
+      <div>
+        <p class="footer__brand">Dulces Livia</p>
+        <p>Mermeladas caseras y artesanales.</p>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <ul>
+          <li><a href="https://wa.me/5490000000000">WhatsApp: +54 9 000 000 0000</a></li>
+          <li><a href="mailto:hola@dulceslivia.com">hola@dulceslivia.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Redes sociales</h3>
+        <ul>
+          <li><a href="https://instagram.com/dulceslivia" target="_blank" rel="noopener">Instagram @dulceslivia</a></li>
+          <li><a href="https://facebook.com/dulceslivia" target="_blank" rel="noopener">Facebook /dulceslivia</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__legal">© <span id="anio"></span> Dulces Livia. Hecho con cariño.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
