@@ -1,0 +1,8 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+crash.log
+
+# Carpeta local de Terraform
+.terraform/

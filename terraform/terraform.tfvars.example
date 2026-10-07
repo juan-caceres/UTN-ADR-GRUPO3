@@ -1,0 +1,4 @@
+## estructura, no son datos reales
+
+resource_group_name  = "rg-frontend"
+storage_account_name = "frontendnombre" # Cambiar por un nombre único
