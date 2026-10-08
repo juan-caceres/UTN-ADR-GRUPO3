@@ -9,7 +9,11 @@ terraform {
   }
 }
 provider "azurerm" {
-  features {}
+  features {
+    resource_group {
+      prevent_deletion_if_contains_resources = false
+    }
+  }
 }
 
 # 2. Variables (se definen en el archivo de cada integrante)
@@ -30,7 +34,7 @@ variable "storage_account_name" {
 # 3. Recursos a crear
 resource "azurerm_resource_group" "rg" {
   name     = var.resource_group_name
-  location = "eastus"
+  location = "eastus2"
 }
 
 resource "azurerm_storage_account" "storage" {
