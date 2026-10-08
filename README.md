@@ -34,7 +34,7 @@ cp terraform.tfvars.example terraform.tfvars
 ### 2. Iniciar sesión en azure
 
 ```bash
-az login
+az login --use-device-code
 ```
 
 ### 3. Desplegar infraestructura (el .tfstate fue ignorado, para cada computadora será un proyecto nuevo. Inicializar y crean la cuenta de almacenamiento estático)
@@ -53,6 +53,11 @@ Desde la raíz del repositorio:
 ```bash
 az storage blob upload-batch \
   --account-name frontendejemplo \
-  --source ./frontend \
+  --source ../frontend \
   --destination \$web
+```
+###Dar de baja
+
+```bash
+terraform destroy
 ```
